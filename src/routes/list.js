@@ -1,32 +1,29 @@
-import React from 'react';
 import Loadable from 'react-loadable';
 import DefaultLoading from '../components/DefaultLoading';
 import ProtectedRouter from './ProtectedRouter';
 import LoginRouter from './LoginRouter';
 
-const defaultloading = () => <DefaultLoading />;
-
 const HomePage = Loadable({
   loader: () => import('../pages/Home'),
-  loading: defaultloading,
+  loading: DefaultLoading,
   modules: ['home']
 });
 
 const AdminPage = Loadable({
   loader: () => import('../pages/Admin'),
-  loading: defaultloading,
+  loading: DefaultLoading,
   modules: ['admin']
 });
 
 const LoginPage = Loadable({
   loader: () => import('../pages/Login'),
-  loading: defaultloading,
+  loading: DefaultLoading,
   modules: ['login']
 });
 
 const LogoutPage = Loadable({
   loader: () => import('../pages/Logout'),
-  loading: defaultloading,
+  loading: DefaultLoading,
   modules: ['logout']
 });
 
