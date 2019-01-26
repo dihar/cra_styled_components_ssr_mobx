@@ -1,4 +1,4 @@
-# RCA, SSR, MOBX, STYLED-COMPONENTS boilerplate
+# CRA, SSR, MOBX, STYLED-COMPONENTS boilerplate
 
 ## Start
 
